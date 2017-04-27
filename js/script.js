@@ -13,9 +13,11 @@ document.getElementById('submit').onclick = function (){
     // THEN COMPARE THE TWO
     if (forward === reverse){
         // DO SOMETHING IF IT'S A PALENDROME
-        console.log('palindrome!!');
+        document.getElementById('result').innerHTML = 'Palindrome!!';
+        document.getElementById('result').style.color = 'green';
     } else {
         // DO SOMETHING ELSE IF IT IS NOT A PALENDROME
-        console.log('nope!');
+        document.getElementById('result').innerHTML = 'Nope!';
+        document.getElementById('result').style.color = 'red';
     }
 };
