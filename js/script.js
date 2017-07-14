@@ -14,10 +14,14 @@ document.getElementById('submit').onclick = function (){
     if (forward === reverse){
         // DO SOMETHING IF IT'S A PALENDROME
         document.getElementById('result').innerHTML = 'Palindrome!!';
-        document.getElementById('result').style.color = 'green';
+        document.getElementById('result').style.color = 'white';
+        document.querySelector('.formBox').style.backgroundColor = 'green';
+        document.querySelector('.formBox').style.color = 'white';
     } else {
         // DO SOMETHING ELSE IF IT IS NOT A PALENDROME
         document.getElementById('result').innerHTML = 'Nope!';
-        document.getElementById('result').style.color = 'red';
+        document.getElementById('result').style.color = 'white';
+        document.querySelector('.formBox').style.backgroundColor = 'red';
+        document.querySelector('.formBox').style.color = 'white';
     }
 };
